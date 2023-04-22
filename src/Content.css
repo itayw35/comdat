@@ -1,0 +1,13 @@
+.books{
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.books-container{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}

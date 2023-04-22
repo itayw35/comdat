@@ -1,0 +1,92 @@
+/* :root{
+    --my-color:var(--my-color);
+} */
+.page-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+}
+.mishna-text{
+    display: flex;
+    width: 50%;
+justify-content:space-evenly;
+flex-wrap: wrap;
+gap: 5px;
+}
+/* p::selection{
+    color: var(--my-color);
+} */
+.mishna-container{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+ 
+}
+.colors-palette-container{
+    display: flex;
+    flex-direction: column;
+align-items:end;
+width:15%;}
+#orange-radio{
+    color: orange;
+}#red-radio{
+    color: red;
+}
+#purple-radio{
+    color: purple;
+}
+#green-radio{
+    color:green;
+}
+#light-blue-radio{
+    color:lightblue ;
+}
+.orange{
+    display: flex;
+}
+.save-button{
+    height: 50px;
+    width: 100px;
+    border-radius: 50px;
+    color:blue;
+    background-color: blanchedalmond;
+}
+.save-button:hover{
+    background-color: rgb(243, 209, 157);
+}
+.buttons{
+    display: flex;
+justify-content: space-evenly;
+width: 100%;
+}
+#popup{
+    height:0px;
+    width: 200px;
+    transition:height 1s;
+    position: absolute;
+    top:50%;
+    left: 35%;
+    z-index: 100;
+    background-color: rgba(8, 99, 99, 0.818);
+    border-radius: 10px;
+    display: none;
+    color: darkorange;
+}
+.change {
+height: 100px !important;
+display: flex !important;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+}
+button{
+    cursor: pointer;
+
+}
+input{
+    cursor: pointer;
+}
+label{
+    cursor: pointer;
+}

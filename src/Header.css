@@ -1,0 +1,8 @@
+.header{
+    height: 100px;
+    color: red;
+    margin-bottom: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(195, 234, 253);
+    width: 100vw;
+}
