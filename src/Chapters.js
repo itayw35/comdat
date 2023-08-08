@@ -3,7 +3,8 @@ import { Link, useLoaderData } from "react-router-dom";
 
 function Chapters() {
   const chaptersNum = useLoaderData().data[0].length;
-  const title = useLoaderData().data[0].heTitle;
+  const heTitle = useLoaderData().data[0].heTitle;
+  const title = useLoaderData().data[0].title;
   const paragraphsNum = useLoaderData().data[0].chapters;
   const chapters = [
     "א",
@@ -33,13 +34,13 @@ function Chapters() {
   ];
   return (
     <div>
-      <h4>{title}</h4>
+      <h4>{heTitle}</h4>
       {chapters.slice(0, chaptersNum).map((v, i) => {
         const chapterId = i + 1;
         return (
           <Link
             to={`/books/${title}/${chapterId}`}
-            state={{ paragraphsNum: paragraphsNum[i], title: title }}
+            state={{ paragraphsNum: paragraphsNum[i], title: heTitle }}
           >
             {v + " |"}{" "}
           </Link>
